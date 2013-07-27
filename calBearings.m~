@@ -1,0 +1,14 @@
+function bearings = calBearings(whaleLocsGuess, rcv)
+%function bearings = calBearings(whaleLocsGuess, rcv) 
+%gives the bearings (theoretical) when the trajectory of the whale is given
+%by a Nx2 vector whaleLocsGuess. 
+
+xx = whaleLocsGuess(:, 1); 
+yy = whaleLocsGuess(:, 2); 
+
+if xx == rcv(:, 1)
+
+angle1 = atand((yy - rcv(:, 2))./(xx - rcv(:, 1))); 
+angle1 = angle1 - 90*(1 - sign(xx - rcv(:, 1)));
+bearings = 90 - angle1; 
+
