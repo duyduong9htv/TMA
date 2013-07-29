@@ -40,6 +40,9 @@ classdef TMA
         
         trackTimeWindowed; 
         
+        error_grid;
+        searchRadius; 
+        
         %control 
         piecewisefit; 
         L; %minimum synthetic aperture for tracking 
