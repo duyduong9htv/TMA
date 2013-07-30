@@ -33,7 +33,7 @@ function w = getErrorGrid(w)
             end
         end 
 
-        [x_hat, y_hat, error_grid] = estMMSE(rcv, beta1, 2000, x1, x2, y1, y2); %coarse 
+        [x_hat, y_hat, error_grid] = estMMSE(rcv, beta1, 10, x1, x2, y1, y2); %coarse 
         
 
         w.xMMSE = x_hat; 

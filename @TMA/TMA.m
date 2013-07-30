@@ -78,10 +78,6 @@ classdef TMA
             disp('Results all reset!'); 
         end
         
-
-        
-        
-        
         
     end
 end
