@@ -1,5 +1,5 @@
 
-function w = getSATresultsThreshold(w)
+function w = movingTriangulateMMSE(w)
     disp(['Getting SAT results using aperture L = ' num2str(w.L) ' m...'])
     pause(2); 
     rcvLocs = w.rcvLocs; 

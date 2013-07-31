@@ -24,8 +24,8 @@ for k = 1:length(t)
         y1 = trackingResults(end, 2); 
         %a function here restricting the search to within 20 km from
         %previous estimate (to reduce the time) 
-        [x_hat, y_hat] = estMMSE(w1.rcvLocs, w1.trueBearings, 100,...
-            x1-5e3, x1+5e3, y1-5e3, y1+5e3); 
+        [x_hat, y_hat] = estMMSE(w1.rcvLocs, w1.trueBearings, 50,...
+            x1-3e3, x1+3e3, y1-3e3, y1+3e3); 
         disp(k/length(t));
         trackingResults = [trackingResults; x_hat y_hat]; 
     end
