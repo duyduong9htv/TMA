@@ -1,8 +1,7 @@
 
 function w = getSATresultsThreshold(w)
 % 3 options: piecewisefit = 1: use piecewise linear fit 
-% piecewisefit = 0 = use linear fit
-% = -1, no fit at all
+% piecew
     disp(['Getting SAT results using aperture L = ' num2str(w.L) ' m...'])
     pause(2); 
     rcvLocs = w.rcvLocs; 
