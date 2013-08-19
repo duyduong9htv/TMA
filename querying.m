@@ -11,7 +11,7 @@ whales = WhaleQuery('frequency', [50 1000], 'dateTime',...
     {'2006-10-02 10:00:00', '2006-10-03 10:00:00'});
 % note that time is in GMT, not EDT 
 
-% whales = WhaleQuery('track', '571_5'); 
+% whales = WhaleQuery('track', '571_7'); 
 
 
 %% getting rid of empty bearing measurements
